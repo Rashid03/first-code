@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <body>
-	<h3>Example Of Text Field</h3>
-	<form>
-		<label for="EMAIL ID">Email Id:</label><br>
-		<input type="text" name="Email id" id="Email id">
-	</form>
+	<center>
+		<h1 style="color:green"> GeeksforGeeks </h1>
+		<h3>Canvas miterLimit Property</h3>
+		<canvas id="gfgCanvas"
+				width="400"
+				height="200"
+				style="border:2px solid ">
+		</canvas>
+
+		<script>
+			var gfg = document.getElementById("gfgCanvas");
+			var context = gfg.getContext("2d");
+			context.lineWidth = 10;
+			context.lineJoin = "miter";
+			context.miterLimit = 5;
+			context.moveTo(80, 80);
+			context.lineTo(200, 108);
+			context.lineTo(80, 136);
+			context.stroke();
+		</script>
+	</center>
+
 </body>
+
 </html>
